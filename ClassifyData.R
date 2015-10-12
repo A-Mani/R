@@ -1,3 +1,9 @@
+# Classify Data Revised
+# Author: A. Mani, a.mani.cms@gmail.com
+# Date: 10/11/2015
+# License: Creative Commons Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0) License
+# All rights reserved.
+
 # Classify Data
 # Author: Jitender Aswani, Co-Founder @datadolph.in
 # Date: 3/15/2013
@@ -46,7 +52,10 @@ getAllowedDateFormats <- function() {
   separators <- c("", " ", "/", "-", ".")
   #strptime {base}  /^[a-zA-Z]{3}\s+[0-9]{2}$/
   allowed.date.list <- list()
-  
+
+## Is this efficient ???
+
+
   for (i in 1:length(patterns)) {
     for (j in 1:length(separators)) {
       p <- patterns[i]
